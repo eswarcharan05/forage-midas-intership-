@@ -17,11 +17,13 @@ public class TransactionRecord {
     @ManyToOne
     private UserRecord recipient;
 
+    private float incentive;
     protected TransactionRecord() {
     }
 
-    public TransactionRecord(float amount, UserRecord sender, UserRecord recipient) {
+    public TransactionRecord(float amount, float incentive, UserRecord sender, UserRecord recipient) {
         this.amount = amount;
+        this.incentive = incentive;
         this.sender = sender;
         this.recipient = recipient;
     }
