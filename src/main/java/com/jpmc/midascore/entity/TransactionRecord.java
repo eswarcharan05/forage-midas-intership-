@@ -18,6 +18,7 @@ public class TransactionRecord {
     private UserRecord recipient;
 
     private float incentive;
+
     protected TransactionRecord() {
     }
 
@@ -42,5 +43,9 @@ public class TransactionRecord {
 
     public UserRecord getRecipient() {
         return recipient;
+    }
+
+    public float getIncentive() {
+        return incentive;
     }
 }
